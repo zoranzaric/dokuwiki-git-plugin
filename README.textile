@@ -1,1 +1,12 @@
 h1. DokuWiki Git-Plugin
+
+This plugin syncs all content of a DokuWiki to a remote git-repository.
+
+__NOTE: At the moment this is a proof-of-concept.__
+
+h2. Requirements
+
+* Git must be installed
+* the <code>data/</code> directory must be a Git-repository
+* the <code>data/.git/</code> direcotry and it's content must be writable by the webserver.
+* A remote-repository named <code>master</code> must be configured
