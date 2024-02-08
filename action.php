@@ -24,7 +24,7 @@ class action_plugin_git extends DokuWiki_Action_Plugin {
 		);
 	}
 
-	function register(&$controller) {
+	function register(Doku_Event_Handler $controller) {
 		$controller->register_hook('IO_WIKIPAGE_WRITE', 'AFTER', $this, '_handle_io_wikipage_write');
 		$controller->register_hook('DOKUWIKI_DONE', 'AFTER', $this, '_handle_dokuwiki_done');
 		$controller->register_hook('INDEXER_TASKS_RUN', 'AFTER', $this, '_handle_indexer_tasks_run');
